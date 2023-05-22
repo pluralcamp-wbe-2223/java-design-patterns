@@ -1,6 +1,6 @@
 package com.pluralcamp.behavioral.observer;
 
-public interface SubjectInterface {
+public interface ISubject {
 	void register(Observer anObserver);
 
 	void unregister(Observer anObserver);

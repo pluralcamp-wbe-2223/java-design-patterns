@@ -6,6 +6,9 @@ public class Main {
 		System.out.println("Trying to make a captain for your team:");
 		// Constructor is private.We cannot use "new" here.
 		// Captain c3 = new Captain();//error
+		
+		System.out.println("Number of instances = " + Captain.numberOfInstance);
+		
 		Captain c1 = Captain.getCaptain();
 		System.out.println("Trying to make another captain for your team:");
 		Captain c2 = Captain.getCaptain();
@@ -13,5 +16,6 @@ public class Main {
 			System.out.println("c1 and c2 are same instance.");
 		}
 		// Captain.CaptainDerived derived=c1.new CaptainDerived();
+		System.out.println("Number of instances = " + Captain.numberOfInstance);
 	}
 }

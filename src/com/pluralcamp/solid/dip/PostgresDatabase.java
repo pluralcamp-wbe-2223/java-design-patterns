@@ -11,7 +11,8 @@ public class PostgresDatabase implements Database {
 	@Override
 	public void saveEmpInDatabase(String empId) {
 		//Saving emp id in Postgres db...
-		System.out.printf("The id: %s is saved in the PostgreSQL database%n", empId);
+		System.out.printf("The id: %s is saved in the "
+				+ "PostgreSQL database%n", empId);
 	}
 
 }

@@ -11,7 +11,8 @@ public class MySQLDatabase implements Database {
 	@Override
 	public void saveEmpInDatabase(String empId) {
 		//Saving emp id in MySQL db...
-		System.out.printf("The id: %s is saved in the MySQL database%n", empId);
+		System.out.printf("The id: %s is saved in the MySQL database%n", 
+				empId);
 	}
 
 }

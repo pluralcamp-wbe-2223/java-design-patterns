@@ -17,7 +17,8 @@ public class GuestUserPayment implements NewPayment {
 	
 	@Override
 	public void newPayment() {
-		System.out.printf("Processing %s's new payment request...%n", this.name);
+		System.out.printf("Processing %s's new payment request...%n", 
+				this.name);
 		//Some other code, if any			
 	}
 

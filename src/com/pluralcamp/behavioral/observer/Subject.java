@@ -3,7 +3,7 @@ package com.pluralcamp.behavioral.observer;
 import java.util.ArrayList;
 import java.util.List;
 
-public class Subject implements SubjectInterface {
+public class Subject implements ISubject {
 	private int flag;
 
 	public int getFlag() {

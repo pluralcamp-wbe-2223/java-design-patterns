@@ -17,14 +17,14 @@ public class GuestUserPayment implements Payment {
 	
 	@Override
 	public void previousPaymentInfo() {
-		//A guest user does not have previous payments
-		throw new UnsupportedOperationException();//Breaks LSP
-		
+		//A guest user does not have previous payments		
+		throw new UnsupportedOperationException();//Breaks LSP		
 	}
 
 	@Override
 	public void newPayment() {
-		System.out.printf("Processing %s's new payment request...%n", this.name);
+		System.out.printf("Processing %s's new payment request...%n", 
+				this.name);
 		//Some other code, if any			
 	}
 

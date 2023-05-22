@@ -10,6 +10,8 @@ public class ObserverType1 implements Observer {
 
 	@Override
 	public void update(int updatedValue) {
-		System.out.println(nameOfObserver + " has received an alert: Updated myValue in Subject is: " + updatedValue);
+		System.out.println(nameOfObserver + 
+				" has received an alert: Updated myValue in Subject is: " + 
+				updatedValue);
 	}
 }

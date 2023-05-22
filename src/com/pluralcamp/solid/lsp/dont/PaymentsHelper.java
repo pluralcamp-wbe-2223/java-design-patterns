@@ -8,7 +8,7 @@ public class PaymentsHelper {
 	List<Payment> payments = new ArrayList<>();
 	
 	public void addUserPayment(Payment userPayment) {
-		payments.add(userPayment);
+		this.payments.add(userPayment);
 	}
 	
 	public void showPreviousPayments() {

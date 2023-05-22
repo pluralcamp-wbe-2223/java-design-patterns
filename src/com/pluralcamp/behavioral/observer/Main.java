@@ -15,12 +15,16 @@ public class Main {
 		subject.register(myObserver2);
 		subject.register(myObserver3);
 		System.out.println(" Setting Flag = 5 ");
-		subject.setFlag(5);
+		
+		subject.setFlag(5);//Evento que dispara (trigger) una acción
+		//en los observadores (listeners)
+		
 		// Unregistering an observer(Roy))
 		subject.unregister(myObserver1);
 		// No notification this time Roy. Since it is unregistered.
 		System.out.println("\n Setting Flag = 50 ");
-		subject.setFlag(50);
+	    subject.setFlag(50);
+	    
 		// Roy is registering himself again
 		subject.register(myObserver1);
 		System.out.println("\n Setting Flag = 100 ");

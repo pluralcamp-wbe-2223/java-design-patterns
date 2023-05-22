@@ -10,13 +10,15 @@ public class RegisteredUserPayment implements Payment {
 	
 	@Override
 	public void previousPaymentInfo() {
-		System.out.printf("Retrieving %s's last payment details...%n", this.userName);
+		System.out.printf("Retrieving %s's last payment details...%n", 
+				this.userName);
 		//Some other code, if any		
 	}
 
 	@Override
 	public void newPayment() {
-		System.out.printf("Processing %s's new payment request...%n", this.userName);
+		System.out.printf("Processing %s's new payment request...%n", 
+				this.userName);
 		//Some other code, if any				
 	}
 

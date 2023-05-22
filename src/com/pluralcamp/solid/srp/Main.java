@@ -21,12 +21,14 @@ public class Main {
 		employee.displayDetails();
 
 		// Generate id
-		EmployeeIdGenerator idGenerator = new EmployeeIdGenerator();
+		EmployeeIdGenerator idGenerator = 
+				new EmployeeIdGenerator();
 		String empId = idGenerator.generateEmpId(employee.firstName);
 		System.out.println("Employee id: " + empId);
 
 		// Check seniority level
-		SeniorityChecker seniorityChecker = new SeniorityChecker();
+		SeniorityChecker seniorityChecker = 
+				new SeniorityChecker();
 		String seniorityLevel = seniorityChecker.checkSeniority(employee.experienceInYears);
 		System.out.printf("This is a %s employee.%n", seniorityLevel);
 	}

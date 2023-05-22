@@ -2,17 +2,21 @@ package com.pluralcamp.creational.simplefactory;
 
 import java.util.Scanner;
 
-class SimpleFactory {
+public class SimpleFactory {
+	
 	public Animal createAnimal() {
+		
 		Animal intendedAnimal = null;
 		System.out.println("Enter your choice( 0 for Dog, 1 for Tiger)");
 		/*
-		 * To suppress the warning message:Resource leak:'input' is never closed. So,the
+		 * To suppress the warning message:
+		 * Resource leak:'input' is never closed. So,the
 		 * following line is optional in this case
 		 */
 		@SuppressWarnings("resource")
 		Scanner input = new Scanner(System.in);
 		int choice = Integer.parseInt(input.nextLine());
+		//input.close();
 		System.out.println("You have entered :" + choice);
 		switch (choice) {
 		case 0:
@@ -28,5 +32,8 @@ class SimpleFactory {
 		}
 
 		return intendedAnimal;
+	
+	
 	}
+	
 }
